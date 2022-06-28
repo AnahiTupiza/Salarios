@@ -20,7 +20,7 @@ bool Controlador::calcular()
     // Determinar el valor hora
     double valorHora = 0;
     switch (m_modelo->jornada()) {
-    case TipoJornada::Matituna:
+    case TipoJornada::Matutina:
         valorHora = MATUTINO;
         break;
     case TipoJornada::Vespertina:

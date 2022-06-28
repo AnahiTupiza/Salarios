@@ -5,6 +5,7 @@
 #include <QDebug>
 
 #include "obrero.h"
+#include "controlador.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class Salarios; }

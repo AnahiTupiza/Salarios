@@ -17,9 +17,17 @@ Salarios::~Salarios()
 
 void Salarios::on_btnCalcular_clicked()
 {
-    Obrero modelo("Juan",25,TipoJornada::Matutina);
+    //Obrero modelo("Juan",25,TipoJornada::Matutina);
+    //qDebug()<<modelo.toString();
+    Controlador control;
+    control.setDatos("Juan",25,TipoJornada::Matutina);
+    if (control.calcular()){
+        qDebug()<<control.getDatos();
+    }else {
+        qDebug()<<"No se pudo calcular salarios";
+    }
 
-    qDebug()<<modelo.toString();
+
 
 
 }
