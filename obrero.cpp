@@ -3,13 +3,19 @@
 Obrero::Obrero(QObject *parent)
     : QObject{parent}
 {
-
+    this->m_nombre = "";
+    this->m_horas = 0;
+    this->m_jornada = TipoJornada::Matutina;
 }
 
 Obrero::Obrero(const QString &nombre, int horas, TipoJornada jornada) : m_nombre(nombre),
     m_horas(horas),
     m_jornada(jornada)
-{}
+{
+    m_salarioBruto=0;
+    m_salarioNeto=0;
+    m_descuento=0;
+}
 
 const QString &Obrero::nombre() const
 {

@@ -2,6 +2,9 @@
 #define SALARIOS_H
 
 #include <QMainWindow>
+#include <QDebug>
+
+#include "obrero.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class Salarios; }
