@@ -134,3 +134,14 @@ void Salarios::on_action_Guardar_triggered()
 
 }
 
+
+void Salarios::on_actionAcerca_del_Salario_triggered()
+{
+    //Crear un objeto del cuadro de diálogo
+    Acerca *dialog=new Acerca(this);
+    //Enviar datos a la otra ventana
+    dialog->setVersion(VERSION);
+    //Mostrar la venta en modo NODAL
+    dialog->exec();
+}
+
