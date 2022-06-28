@@ -19,6 +19,13 @@
   <property name="windowTitle">
    <string>Salarios</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="recursos.qrc">
+    <normaloff>:/recursos/img/icono.png.png</normaloff>:/recursos/img/icono.png.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QHBoxLayout" name="horizontalLayout_3">
     <item>
@@ -36,17 +43,22 @@
        </size>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(255, 170, 255);</string>
+       <string notr="true">background-color: rgb(26, 92, 127);</string>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_2">
        <item>
         <widget class="QWidget" name="widget_3" native="true">
          <property name="styleSheet">
-          <string notr="true">background-color: rgb(170, 255, 255);</string>
+          <string notr="true">background-color: rgb(26, 143, 135);</string>
          </property>
          <layout class="QFormLayout" name="formLayout">
           <item row="0" column="0">
            <widget class="QLabel" name="label">
+            <property name="font">
+             <font>
+              <bold>true</bold>
+             </font>
+            </property>
             <property name="text">
              <string>Nombre:</string>
             </property>
@@ -54,6 +66,9 @@
           </item>
           <item row="0" column="1">
            <widget class="QLineEdit" name="inNombre">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(213, 213, 213);</string>
+            </property>
             <property name="placeholderText">
              <string>Ingrese el nombre </string>
             </property>
@@ -61,19 +76,34 @@
           </item>
           <item row="1" column="0">
            <widget class="QLabel" name="label_2">
+            <property name="font">
+             <font>
+              <bold>true</bold>
+             </font>
+            </property>
             <property name="text">
              <string>Horas:</string>
             </property>
            </widget>
           </item>
           <item row="1" column="1">
-           <widget class="QSpinBox" name="inHoras"/>
+           <widget class="QSpinBox" name="inHoras">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(209, 209, 209);</string>
+            </property>
+           </widget>
           </item>
          </layout>
         </widget>
        </item>
        <item>
         <widget class="QGroupBox" name="groupBox">
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
          <property name="title">
           <string>Jornada</string>
          </property>
@@ -164,6 +194,10 @@
       <layout class="QHBoxLayout" name="horizontalLayout_2">
        <item>
         <widget class="QPlainTextEdit" name="outCalculos">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(203, 203, 203);
+background-color: rgb(226, 226, 226);</string>
+         </property>
          <property name="readOnly">
           <bool>true</bool>
          </property>
@@ -253,51 +287,107 @@
    </property>
   </action>
   <action name="action_Nuevo">
+   <property name="icon">
+    <iconset resource="recursos.qrc">
+     <normaloff>:/recursos/img/new.png.png</normaloff>:/recursos/img/new.png.png</iconset>
+   </property>
    <property name="text">
     <string>&amp;Nuevo</string>
+   </property>
+   <property name="font">
+    <font>
+     <bold>true</bold>
+    </font>
    </property>
    <property name="shortcut">
     <string>Ctrl+N</string>
    </property>
   </action>
   <action name="action_Abrir">
+   <property name="icon">
+    <iconset resource="recursos.qrc">
+     <normaloff>:/recursos/img/abrir.png.png</normaloff>:/recursos/img/abrir.png.png</iconset>
+   </property>
    <property name="text">
     <string>&amp;Abrir</string>
+   </property>
+   <property name="font">
+    <font>
+     <bold>true</bold>
+    </font>
    </property>
    <property name="shortcut">
     <string>Ctrl+A</string>
    </property>
   </action>
   <action name="action_Guardar">
+   <property name="icon">
+    <iconset resource="recursos.qrc">
+     <normaloff>:/recursos/img/guardar.png.png</normaloff>:/recursos/img/guardar.png.png</iconset>
+   </property>
    <property name="text">
     <string>&amp;Guardar</string>
+   </property>
+   <property name="font">
+    <font>
+     <bold>true</bold>
+    </font>
    </property>
    <property name="shortcut">
     <string>Ctrl+S</string>
    </property>
   </action>
   <action name="action_Calcular">
+   <property name="icon">
+    <iconset resource="recursos.qrc">
+     <normaloff>:/recursos/img/calcular.png.png</normaloff>:/recursos/img/calcular.png.png</iconset>
+   </property>
    <property name="text">
     <string>&amp;Calcular</string>
+   </property>
+   <property name="font">
+    <font>
+     <bold>true</bold>
+    </font>
    </property>
    <property name="shortcut">
     <string>Ctrl+C</string>
    </property>
   </action>
   <action name="action_Salir">
+   <property name="icon">
+    <iconset resource="recursos.qrc">
+     <normaloff>:/recursos/img/salir.png.png</normaloff>:/recursos/img/salir.png.png</iconset>
+   </property>
    <property name="text">
     <string>&amp;Salir</string>
+   </property>
+   <property name="font">
+    <font>
+     <bold>true</bold>
+    </font>
    </property>
    <property name="shortcut">
     <string>Ctrl+Q</string>
    </property>
   </action>
   <action name="actionAcerca_del_Salario">
+   <property name="icon">
+    <iconset resource="recursos.qrc">
+     <normaloff>:/recursos/img/i.png.png</normaloff>:/recursos/img/i.png.png</iconset>
+   </property>
    <property name="text">
     <string>Acerca del Salario</string>
    </property>
+   <property name="font">
+    <font>
+     <bold>true</bold>
+    </font>
+   </property>
   </action>
  </widget>
- <resources/>
+ <resources>
+  <include location="recursos.qrc"/>
+ </resources>
  <connections/>
 </ui>

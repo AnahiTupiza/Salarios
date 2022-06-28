@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>recursos/img/icono.png.png</file>
+        <file>recursos/img/i.png.png</file>
+        <file>recursos/img/salir.png.png</file>
+        <file>recursos/img/calcular.png.png</file>
+        <file>recursos/img/guardar.png.png</file>
+        <file>recursos/img/abrir.png.png</file>
+        <file>recursos/img/new.png.png</file>
+    </qresource>
+</RCC>

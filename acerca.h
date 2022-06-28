@@ -19,9 +19,12 @@ public:
 
     void setVersion(const QString &newVersion);
 
+    int valor() const;
+
 private:
     Ui::Acerca *ui;
     QString m_version;
+    int m_valor;
 };
 
 #endif // ACERCA_H

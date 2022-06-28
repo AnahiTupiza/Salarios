@@ -143,5 +143,7 @@ void Salarios::on_actionAcerca_del_Salario_triggered()
     dialog->setVersion(VERSION);
     //Mostrar la venta en modo NODAL
     dialog->exec();
+    //luego de cerrar la ventana, se acceden a los datos de la misma
+    qDebug()<<dialog->valor();
 }
 
