@@ -53,7 +53,11 @@
            </widget>
           </item>
           <item row="0" column="1">
-           <widget class="QLineEdit" name="inNombre"/>
+           <widget class="QLineEdit" name="inNombre">
+            <property name="placeholderText">
+             <string>Ingrese el nombre </string>
+            </property>
+           </widget>
           </item>
           <item row="1" column="0">
            <widget class="QLabel" name="label_2">
@@ -159,7 +163,14 @@
       </property>
       <layout class="QHBoxLayout" name="horizontalLayout_2">
        <item>
-        <widget class="QPlainTextEdit" name="outCalculos"/>
+        <widget class="QPlainTextEdit" name="outCalculos">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="placeholderText">
+          <string>Resultados de los calculos</string>
+         </property>
+        </widget>
        </item>
       </layout>
      </widget>
